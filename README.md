@@ -1,5 +1,11 @@
 # ValidatesCurp
 
+This projects aims to validate CURP documents (Clave Única de Registro de Población).
+
+It follows documentation found [here](http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/InstructivoNormativo.pdf) in the government official  website.
+
+The documentation is also included in the [docs](https://github.com/plribeiro3000/validates_curp/tree/master/docs) folder of this project.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,11 +24,28 @@ Or install it yourself as:
 
 ## Usage
 
-This projects aims to validate CURP documents (Clave Única de Registro de Población).
+Just use as any other validator:
 
-It follows documentation found [here](http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/InstructivoNormativo.pdf) in the government official  website.
+```ruby
+class User < ActiveRecord::Base
+  validates :curp, curp: true
+end
+```
 
-The documentation is also included in the [docs](https://github.com/plribeiro3000/validates_curp/tree/master/docs) folder of this project.
+## Testing
+
+Require the matcher:
+
+```ruby
+require 'validates_curp/require_a_valid_curp_matcher'
+```
+
+Use in your tests:
+
+```ruby
+it { is_expected.to require_a_valid_curp } # It will test the attribute :curp by default
+it { is_expected.to require_a_valid_curp(:id) }
+```
 
 ## Development
 
