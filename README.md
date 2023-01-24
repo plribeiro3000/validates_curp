@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This projects aims to validate CURP documents (Clave Única de Registro de Población).
+
+It follows documentation found [here](http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/InstructivoNormativo.pdf) in the government official  website.
+
+The documentation is also included in the [docs](https://github.com/plribeiro3000/validates_curp/tree/master/docs) folder of this project.
 
 ## Development
 
