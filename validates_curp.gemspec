@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Paulo Ribeiro']
   spec.email = ['plribeiro3000@gmail.com']
 
-  spec.summary = 'Validates CURP and test it with matchers in a simple way.'
+  spec.summary = 'Validates Mexican CURP and test it with matchers in a simple way.'
   spec.homepage = 'https://github.com/plribeiro3000/validates_curp'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.6.0'
